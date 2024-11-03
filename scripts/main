@@ -60,6 +60,7 @@ pushd "$build_dir" >/dev/null
   pushd "${src_dir}" >/dev/null
     ${NICE} ./configure \
       --prefix="${INSTALL_DIR}" \
+      --disable-multi-os-directory \
       --disable-docs \
       --enable-shared=no \
       --enable-static=yes \
